@@ -1,0 +1,94 @@
+/* Board Page */
+
+.board-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+}
+
+.board-header {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+}
+
+.board-header h1 {
+  margin: 0 0 10px 0;
+  color: var(--text-dark);
+  font-size: 28px;
+}
+
+.board-description {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 14px;
+}
+
+.board-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.create-todo-form {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+
+.create-todo-form h3 {
+  margin: 0 0 20px 0;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .board-controls {
+    justify-content: flex-start;
+  }
+
+  .filter-buttons {
+    width: 100%;
+  }
+}
